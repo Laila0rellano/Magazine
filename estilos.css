@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Eczar:wght@400..800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+/* ENCABEZADO */
+#Encabezado {
+    border-top: 15px solid rgb(100, 100, 100);
+    width: 100%;
+}
+/* BARRA DE NAVEGACIÓN */
+#navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #080808; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+#navizquierda h2::first-letter {
+    color: rgb(255, 66, 198); 
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+#navizquierda h2 {
+    color: white;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 47px;
+}
+#navizquierda h4 {
+    color: white;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 100px;
+    font-family: 'Afacad Flux' , light;
+}
+#navderecha {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#navderecha li {
+    margin-left: 20px;
+}
+#navderecha li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Eczar', serif;
+}
+#navderecha li a span {
+    font-size: 12px;
+    color: gray;
+    font-family: 'Afacad Flux' , light;
+}
+#navderecha li a:hover,
+#navderecha li a:active {
+    color: rgb(255, 66, 198);
+    border-top: 2px solid rgb(255, 66, 198); 
+}
+
+/* IMAGEN GRANDE */
+#contenedorimagen {
+    width: 100%;
+    background-color: #1d1d1d; 
+    padding: 15px 0; 
+    text-align: center; 
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+#contenedorimagen img {
+    width: 100%; 
+    max-width: 90%; 
+    background-color: #1d1d1d; 
+    border: 8px solid rgb(255, 66, 198);
+    border-bottom: 30px solid rgb(255, 66, 198);
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+
+/* CONTENIDO */
+#contenedorpaneles {
+    display: flex;
+    padding: 20px;
+}
+#paneles-izquierda {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+}
+#clasicos,
+#tips,
+#sponsors {
+    background-color: #f3f3f3; 
+    color: #080808; 
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+#clasicos h2, #sponsors h2, #tips h2 {
+    font-family: 'Eczar', serif;
+    border-bottom: solid 2px rgb(255, 66, 198);
+    padding-bottom: 0px;
+}
+
+/* CLASICOS */
+#clasicos-imagenes{
+    display: flex;
+    justify-content: space-between; 
+    text-align: center; 
+    margin: 10px; 
+}
+#clasicos-imagenes img {
+    width: 100%;
+    max-width: 150px; 
+    height: auto; 
+    border: solid 1px rgb(211, 211, 211);
+    padding: 5px;
+}
+#clasicos-imagenes p {
+    padding: 5px;
+    text-align: justify;
+    font-family: 'Afacad Flux' , light; 
+    color: #080808; 
+}
+#clasicos-imagenes a {
+    padding: 5px;
+text-align: justify;
+color: rgb(255, 66, 198);
+}
+
+/* TIPS */
+#tips-imagenes {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+#tips-imagenes > div {
+    padding: 10px;
+    border-top: solid 1px rgb(211, 211, 211);
+    border-bottom: solid 1px rgb(211, 211, 211);
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    align-items: center; 
+    margin: 10px 0; 
+}
+#tips-imagenes img {
+    max-width: 100px;
+    margin-right: 10px; 
+    border-radius: 4%;
+    border: solid 1px rgb(211, 211, 211);
+    padding: 3px;
+}
+#tips-imagenes p {
+    margin: 0; 
+    color: #080808; 
+    font-family: 'Afacad Flux' , light;
+}
+
+#tips-imagenes a {
+    margin: 0; 
+    color: rgb(255, 66, 198);
+}
+
+/* SPONSORS */
+#sponsors {
+    padding: 10px; 
+    flex: 1; 
+}
+#sponsors img {
+    padding: 5px;
+    width: 130px;
+    height: auto; 
+    border: 1px solid #d3d3d3; 
+}
+
+/* PIE DE PÁGINA */
+#pie {
+    background-color: #080808; 
+    color: white; 
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    border-bottom: solid 10px gray;
+}
+#ultima-moda,#horoscopo, #contactenos {
+    flex: 1; 
+    width: 250px; 
+    padding: 10px; 
+}
+#ultima-moda h2, #horoscopo h2, #contactenos h2 {
+    color: #fff; 
+    margin-bottom: 10px; 
+    border-bottom: 2px solid rgb(255, 66, 198);
+    font-family: 'Eczar', serif;
+}
+
+/* ÚLTIMA MODA */
+#ultima-moda {
+    padding: 10px; 
+}
+#ultima-moda > div {
+    display: flex; 
+    align-items: center; 
+}
+#ultima-moda img {
+    width: 200px; 
+    margin-right: 10px; 
+    border: solid gray;
+    padding: 5px;
+    border-radius: 5px; 
+}
+#ultima-moda p {
+    margin: 0; 
+    color: #ddd; 
+    font-size: 16px; 
+    font-family: 'Afacad Flux' , light;
+}
+#ultima-moda a {
+    margin: 0;
+    color: rgb(255, 66, 198);
+    font-size: 16px; 
+    font-family: 'Afacad Flux' , light;
+}
+
+/* HORÓSCOPO */
+#horoscopo-imagenes{
+        display: grid; 
+        grid-template-columns: auto auto auto; 
+    }
+#horoscopo-imagenes img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+/* CONTACTO */
+#contactenos li {
+    list-style: none;
+    font-family: 'Afacad Flux' , light;
+ margin: 5px 0; 
+}
+#contactenos a {
+color:rgb(255, 66, 198);
+ margin: 5px 0; 
+}
